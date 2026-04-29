@@ -28,7 +28,7 @@ except ImportError:
 
 # ── Configuración ─────────────────────────────────────
 MODEL_PATH  = Path("model/plant_disease.tflite")
-LABELS_PATH = Path("model/class_labels.json")
+LABELS_PATH = Path("model/class_names.json")
 IMG_SIZE    = 300
 TOP_K       = 5
 
