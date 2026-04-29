@@ -35,7 +35,10 @@ TOP_K       = 5
 # Estado global del modelo (se carga una sola vez al iniciar)
 state = {}
 
+import os
 
+print("Existe modelo:", os.path.exists("model/plant_disease.tflite"))
+print("Tamaño bytes:", os.path.getsize("model/plant_disease.tflite"))
 # ── Lifespan: carga el modelo al arrancar el servidor ─
 @asynccontextmanager
 async def lifespan(app: FastAPI):
